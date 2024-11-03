@@ -74,7 +74,7 @@ int color_print(const char *format, ...) {
 }
 
 void display_welcome_message(void) {
-    const time_t seed = /* time(NULL) */ 1730619132;
+    const time_t seed = time(NULL);
     srand(seed);
     const int rand_num = rand() % welcome_messages_num;
 
